@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gimnasio TitanFit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">Titan<span>Fit</span></div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="nav" class="nav">
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="aggressive-text">
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>Transforma tu cuerpo con <span>fuerza</span></h1>
+                <p>Entrena con los mejores en TitanFit, tu gimnasio de confianza</p>
+                <a href="#planes" class="btn">Ver planes</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="services" id="servicios">
+        <h2 class="aggressive-text">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img class="zoom-text" src="./img/servicios1.jpeg" alt="Entrenamiento personalizado">
+                <h3>Entrenamiento Personalizado</h3>
+                <p>Rutinas diseñadas según tus objetivos y condición física.</p>
+            </div>
+            <div class="service-card">
+                <img class="zoom-text" src="./img/servicios2.jpeg" alt="Clases de spinning">
+                <h3>Clases de Spinning</h3>
+                <p>Cardio intenso al ritmo de la música con instructores certificados.</p>
+            </div>
+            <div class="service-card">
+                <img class="zoom-text" src="./img/servicios3.jpeg" alt="Asesoría nutricional">
+                <h3>Asesoría Nutricional</h3>
+                <p>Planes alimenticios que complementan tu entrenamiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <section id="planes" class="section dark">
+            <h2 class="aggressive-text">Planes</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3 class="aggressive-image">Básico</h3>
+                    <p>Acceso al gimnasio <br> Lunes a Viernes</p>
+                    <p><strong>$20/mes</strong></p>
+                </div>
+                <div class="card">
+                    <h3 class="aggressive-image">Premium</h3>
+                    <p>Acceso total + clases grupales</p>
+                    <p><strong>$35/mes</strong></p>
+                </div>
+                <div class="card">
+                    <h3 class="aggressive-image">Elite</h3>
+                    <p>Todo incluido + entrenador personal</p>
+                    <p><strong>$50/mes</strong></p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="galeria" class="section">
+            <h2 class="aggressive-image">Galería</h2>
+            <div class="gallery">
+                <img class="zoom-text" src="./img/galeria1.jpg" alt="Zona de pesas">
+                <img class="zoom-text" src="./img/galeria 2.jpg" alt="Clases grupales">
+                <img class="zoom-text" src="img/galeria3.jpg" alt="Entrenamiento">
+            </div>
+        </section>
+
+        <section id="contacto" class="section dark">
+            <h2 class="aggressive-image">Contacto</h2>
+            <div class="zoom-text">
+                <form id="whatsapp-form" class="whatsapp-form">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="text" name="servicio" placeholder="Servicio de interés" required>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                    <button type="submit" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                    </button>
+                </form>
+            </div>
+
+
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3820.3860631379193!2d-93.13108502522596!3d16.757457534026248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd8fabd22c7d7%3A0x6a8e3d6c65b642f2!2sMoctezuma%2C%20Tuxtla%20Guti%C3%A9rrez%2C%20Chis.!5e0!3m2!1ses-419!2smx!4v1749081356030!5m2!1ses-419!2smx"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2025 TitanFit Gym. Todos los derechos reservados.</p>
+        </footer>
+        <div class="social-float">
+            <a href="https://wa.me/9611449749" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/share/15gfuefPo2/?mibextid=wwXIfr" target="_blank" title="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/alertachiapas?igsh=dTU5eTZmdHZ1MmEy" target="_blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+
+
+        <script src="./js/menu.js"></script>
+        <script src="./js/whats.js"></script>
+        <script src="./js/animations.js"></script>
+        <script src="./js/animationzoom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+:root {
+  --naranja: #ff6600;
+  --negro: #121212;
+  --gris: #2c2c2c;
+  --blanco: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--negro);
+  color: var(--blanco);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--negro);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--blanco);
+}
+.logo span {
+  color: var(--naranja);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: #FF6600;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: var(--naranja);
+}
+
+.hero {
+  
+  background-image: url(../img/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+.hero-text h1 span {
+  color: var(--naranja);
+}
+.hero-text p {
+  margin: 1rem 0;
+}
+.btn {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #e65c00;
+}
+/* SERVICIOS */
+.services {
+  padding: 4rem 2rem;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #FF6600;
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  
+}
+
+.service-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  max-width: 350px;
+  transition: transform 0.3s ease;
+  border: 1px solid var(--naranja);
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-card h3 {
+  color: #FF6600;
+  margin: 1rem 0 0.5rem;
+}
+
+.service-card p {
+  padding: 0 1rem 1.5rem;
+  color: #ccc;
+}
+
+
+
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--naranja);
+}
+
+.dark {
+  background-color: var(--gris);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background-color: var(--negro);
+  padding: 1.5rem;
+  border: 1px solid var(--naranja);
+  border-radius: 10px;
+}
+.card h3 {
+  color: var(--naranja);
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--naranja);
+}
+
+
+
+.whatsapp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+  padding: 1rem;
+}
+.whatsapp-form input,
+.whatsapp-form textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25D366; /* verde WhatsApp */
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-whatsapp i {
+  font-size: 1.4rem;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+
+
+
+footer {
+  background-color: #0d0d0d;
+  padding: 1rem;
+  text-align: center;
+  color: var(--blanco);
+  font-size: 0.9rem;
+}
+
+
+.social-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-float a {
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.social-float a:hover {
+  background-color: #FF6600;
+  color: #000;
+  transform: scale(1.1);
+}
+
+
+
+
+.mapa {
+  margin-top: 2rem;
+  border: 2px solid var(--naranja);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* MENU MOVILES */
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--naranja);
+}
+
+/* Menú general */
+.nav {
+  transition: all 0.3s ease;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  .nav.active {
+    transform: translateX(0);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* EFECTOS DE ENTRADA */
+@keyframes aggressiveTextEntry {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(-15deg);
+    filter: blur(4px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(15deg);
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes aggressiveImageEntry {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-360deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3) rotate(360deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+/* Estado inicial sin animar */
+.aggressive-text,
+.aggressive-image {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+
+/* Cuando se activa la animación */
+.aggressive-text.animate {
+  animation: aggressiveTextEntry 1s ease forwards;
+  opacity: 1;
+}
+
+.aggressive-image.animate {
+  animation: aggressiveImageEntry 1.2s ease forwards;
+  opacity: 1;
+}
+
+@keyframes zoomTextEntry {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    filter: blur(5px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-text {
+  opacity: 0;
+  animation-fill-mode: none; /* No mantiene el estado final */
+}
+
+.zoom-text.animate {
+  opacity: 1;
+  animation: zoomTextEntry 1.8s ease;
+}
+
