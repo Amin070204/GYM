@@ -5,7 +5,7 @@
     const servicio = encodeURIComponent(this.servicio.value.trim());
     const mensaje = encodeURIComponent(this.mensaje.value.trim());
 
-    const numero = "9611449749"; // 🔁 Tu número de WhatsApp sin + ni espacios
+    const numero = "5219611449749"; // 🔁 Tu número de WhatsApp sin + ni espacios
 
     const texto = `Hola, soy ${nombre}. Estoy interesado en el servicio: ${servicio}. Este es mi mensaje: ${mensaje}`;
     const url = `https://wa.me/${numero}?text=${texto}`;
